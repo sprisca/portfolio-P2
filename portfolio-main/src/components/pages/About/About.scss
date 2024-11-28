@@ -1,0 +1,66 @@
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 88vh;
+  width: 100%;
+  h1 {
+    color: hsl(229, 27%, 83%);
+    font-size: 1.5rem;
+    list-style: none;
+    width: fit-content;
+    padding: 5px 20px;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .container-loisirs{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+  h3 {
+    color: $secondary-foreground;
+    font-size: 1.3rem;
+    list-style: none;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondary-foreground;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    a{
+      svg{
+        &:hover{
+            fill: $primary;
+          }
+      }
+    }
+  }
+
+}
+/*Media Queries Mobile*/
+@media only screen and (max-width: 775px) {
+  .a-propos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130vh;
+    margin-top: 0.3rem;
+    .note{
+      font-size: 0.3rem;
+    }
+  }
+}
+

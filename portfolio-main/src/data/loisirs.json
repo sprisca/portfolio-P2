@@ -1,0 +1,20 @@
+ [
+    {
+      "id": 1,
+      "title": "Chaine YouTube",
+      "url": "https://www.youtube.com/@marketplacelovapi2020",
+      "iconName": "FaYoutube",
+      "subtitle": "Marketplace LOVAPI",
+      "description":"Sur cette chaîne YouTube, je partage comment utiliser notre plate-forme en même temps j'apprends à utiliser créér des vidéos avec les plateformes connu  comme capcut ou canvas📚."
+    },
+    {
+      "id": 2,
+      "title": "Formation",
+      "url": "https://github.com/sprisca",
+      "iconName": "FcDiploma1",
+      "subtitle": "Openclassrooms",
+      "description":"Pendant les neufs mois, j'ai suivi une formation d'Intégrateur Web au cours de laquelle nous avons réalisé douze projets. J'ai eu l'occasion d'intégrer des maquettes Figma et de rendre les sites web dynamiques en utilisant des appels API en JavaScript, puis en React. J'ai consacré du temps à retravailler chaque projet, ce qui m'a permis d'acquérir des bases solides. De plus, j'ai eu le plaisir de partager mes connaissances avec d'autres étudiants sr slack !"
+    }
+
+  ]
+

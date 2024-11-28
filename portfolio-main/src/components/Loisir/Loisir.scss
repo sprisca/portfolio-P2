@@ -1,0 +1,78 @@
+.loisir{
+  display: flex;
+  flex-direction: column;
+  background-color: $border;
+  border: 1px solid $modal;
+  border-radius: 10px;
+  width: 60%;
+  height: 35vh;
+  .content-up{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    .icon-content{
+      a{
+        svg{
+          transition: all 0.3s;
+          &:hover{
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    color: $secondary-foreground;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  h3 {
+    color: $secondary-foreground;
+    font-size: 1rem;
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: $foreground;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    padding: 5px;
+    padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 1024px) {
+.loisir{
+  p{
+    font-size: 0.9rem;
+  }
+}
+}
+@media only screen and (max-width: 775px) {
+  .loisir{
+    width: 80%;
+    height: 45vh;
+    p{
+      font-size: 0.85rem;
+    }
+    svg{
+      height: 3rem;
+    }
+  }
+}

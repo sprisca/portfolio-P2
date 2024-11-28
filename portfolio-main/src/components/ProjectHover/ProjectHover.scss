@@ -1,0 +1,91 @@
+  //Style au sorvol
+  .project-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0f111aa1;
+    border-radius: 10px;
+    svg{
+      position: absolute;
+      top:5px;
+      right: 5px;
+    }
+    h2{
+      color:$accent-foreground;
+      font-size: 1.2rem;
+      width: fit-content;
+      padding: 5px 10px;
+      margin-left: 5px;
+      margin-bottom: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h3{
+      color: $secondary-foreground;
+      font-size: 1rem;
+      width: fit-content;
+      padding: 5px 10px;
+      margin-left: 5px;
+      margin-bottom: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    p{
+      color:$accent-foreground;
+      font-size: 0.8rem;
+      width: fit-content;
+      padding: 5px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+    }
+    .descriptionMobile{
+      display: none;
+    }
+    .description{
+      display: flex;
+    }
+    ul{
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-left: 25px;
+      li{
+        color:$accent-foreground;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        list-style: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 775px) {
+    .project-details{
+      .descriptionMobile{
+        display: flex;
+      }
+      .description{
+        display: none;
+      }
+      p{
+        font-size: 0.6rem;
+      }
+      h2{
+        font-size: 0.6rem;
+      }
+      h3{
+        font-size: 0.6rem;
+        display: none;
+      }
+      ul{
+        display: none;
+        li{
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
