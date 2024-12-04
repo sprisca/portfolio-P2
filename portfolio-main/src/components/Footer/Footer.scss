@@ -3,12 +3,12 @@ footer{
   gap: 20px;
   width: 100%;
   p{
-    color: $accent-foreground;
+    color:rgba(182, 6, 152, 0.788);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   a{
     text-decoration: none;
-    color: $accent-foreground;
+    color: rgba(182, 6, 152, 0.788);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     &:hover{
       color: $primary;

@@ -12,13 +12,13 @@
   }
     
   a{
-    color:$accent-foreground;
+    color:white;
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style: none;
     width: fit-content;
     padding: 5px 20px;
-    border: 2px solid $accent-foreground;
+    border: 2px solid hsl(267.97deg 25.84% 91.24%);
     margin-left: 20px;
     text-decoration: none;
     border-radius: 5px;

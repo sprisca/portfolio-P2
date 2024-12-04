@@ -1,7 +1,7 @@
 .loisir{
   display: flex;
   flex-direction: column;
-  background-color: $border;
+  background-color: hsl(276.23deg 81.43% 44.35%);
   border: 1px solid $modal;
   border-radius: 10px;
   width: 60%;
@@ -64,10 +64,10 @@
   }
 }
 }
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 775px) and (min-width: 320px){
   .loisir{
     width: 80%;
-    height: 45vh;
+    height: 62vh;
     p{
       font-size: 0.85rem;
     }

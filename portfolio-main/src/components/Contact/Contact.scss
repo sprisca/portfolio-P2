@@ -8,7 +8,7 @@
   display: flex;
   align-items: center; /* Pour centrer verticalement */
   justify-content: center; /* Pour centrer horizontalement */
-  background-color: $modal; /* Remplacez $muted-foreground par votre couleur de fond */
+  background-color: hsl(284.54deg 93.53% 48.08% / 0%); /* Remplacez $muted-foreground par votre couleur de fond */
   .__contact{
     //modal 
     position: relative;
@@ -17,9 +17,9 @@
     justify-content: center;
     align-items: center;
     width: 30%;
-    background-color: $card;
-    color: $foreground;
-    border: 0.1rem solid hsl(227deg 9% 60% / 52%);
+    background-color: whitesmoke;
+    color:blueviolet;
+    border: 0.1rem solid hsla(227, 85%, 41%, 0.52);
     border-radius: 15px;
     h2{
       padding-top: 10px;
@@ -48,18 +48,18 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       input{
-        background-color: $input;
+        background-color:whitesmoke;
         height: 30px;
-        border: 1px solid $modal;
+        border: 1px solid ;
         border-radius: 5px;
-        color: $foreground;
+        color:blueviolet;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.2rem;
         font-weight: bold;
       }
       textarea{
-        background-color: $input;
-        color: $foreground;
+        background-color: whitesmoke;
+        color: blueviolet;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1rem;
         font-weight: bold;

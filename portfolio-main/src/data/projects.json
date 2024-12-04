@@ -5,9 +5,9 @@
     "description": "Premier projet React, démarré rapidement avec Vite comme bundle. J'ai intégré les conceptions depuis une maquette Figma, composants réutilisables avec des props.",
     "description_mobile": "Projet React rapide, intégration depuis Figma.",
     "technologies": [ "REACT","SEO","Figma", "GitHub", "SASS", "HTML"],
-    "image":"../image-projet/kasa/kasa-1.png",
-    "img_l":"../image-projet/cover.webp",
-    "img_r":"../image-projet/mock5.webp",
+    "image":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/kasa/cover.webp",
+    "img_l":"https://github.com/sprisca/portfolio-P2/blob/main/portfolio-main/src/image-projet/kasa/kasa-1.png",
+    "img_r":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/kasa/mock5.webp",
     "github":"https://github.com/sprisca/Projet-7-Kasa"
     
   },
@@ -17,9 +17,9 @@
     "description": "Ce projet a consisté à créer un site web React en transformant des maquettes HTML en composants React, en utilisant Redux pour une meilleure fluidité et une réduction des appels réseau, et en préparant une documentation Swagger pour faciliter l'intégration de futures fonctionnalités.",
     "description_mobile": "Site React avec Redux, maquettes HTML en composants.",
     "technologies": ["REDUX", "SEO", "REACT", "Figma", "GitHub", "SASS", "HTML"],
-    "image":"",
-    "img_l":"",
-    "img_r":"",
+    "image":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/argent-bank/cover.webp",
+    "img_l":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/argent-bank/mock6.webp",
+    "img_r":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/argent-bank/mock8.webp",
     "github":""
     
   },
@@ -29,9 +29,9 @@
     "description": "Pendant un weekend, j'ai exploré le monde des jeux en JavaScript en créant un petit jeu Snake avec une version mobile. J'ai réalisé moi-même les bruitages. Ce projet, intégré en HTML, CSS et JavaScript classique, permet de jouer sur mobile grâce à des boutons tactiles. Vous pouvez voir votre score en temps réel pendant la partie et choisir d'activer ou non une musique d'ambiance. Amusez-vous bien !",
     "description_mobile": "Jeu Snake mobile en HTML, CSS et JavaScript.",
     "technologies": ["HTML", "CSS", "JavaScript", "Lighthouse", "SEO"],
-    "image":"",
-    "img_l":"",
-    "img_r":"",
+    "image":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/nina-carducci/cover.webp",
+    "img_l":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/nina-carducci/mock4.webp",
+    "img_r":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/nina-carducci/mock5.webp",
     "github":"https://github.com/sprisca/P8-Portfolio-nina-carducci-main",
     "site":"https://sprisca.github.io/P8-Portfolio-nina-carducci-main/Portfolio-nina-carducci-main/"
   },
@@ -41,9 +41,9 @@
     "description": "Le projet Javascript de la formation que j'ai le plus apprécié impliquait l'intégration à partir de maquettes figma, des appels à l'API pour la connexion de l'utilisateur, ainsi que la création d'un espace admin où l'administrateur pouvait ajouter ou supprimer un projet.",
     "description_mobile": "Intégration de maquettes avec figma, appels API.",
     "technologies": ["JavaScript","API", "Sass","HTML", "GitHub", "Figma"],
-    "image":"",
-    "img_l":"",
-    "img_r":"",
+    "image":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/portfolio-sophie-bluel/cover.webp",
+    "img_l":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/portfolio-sophie-bluel/sophie-bluel-picture-2.webp",
+    "img_r":"https://github.com/sprisca/portfolio-P2/blob/main/portfolio-main/src/image-projet/portfolio-sophie-bluel/sophie-bluel.jpg",
     "github":"https://github.com/sprisca/Portfolio-architecte-sophie-bluel-master"
     
   },
@@ -53,9 +53,9 @@
     "description": "Intégration d'un site web pour un restaurant. J'ai mis en place des animations CSS pour rendre l'expérience utilisateur plus dynamique et attrayante, tout en veillant à ce qu'elles restent légères et fluides.  ",
     "description_mobile": "Intégration d'un site web pour un restaurant",
     "technologies": ["JavaScript", "GitHub", "Figma","HTML", "Sass"],
-    "image":"",
-    "img_l":"",
-    "img_r":"",
+    "image":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/ohmyfood/cover.webp",
+    "img_l":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/ohmyfood/mock5.webp",
+    "img_r":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/ohmyfood/mock7.webp",
     "github":"https://github.com/sprisca/Ohmyfood-P4"
     
   }
