@@ -53,9 +53,9 @@
     "description": "Intégration d'un site web pour un restaurant. J'ai mis en place des animations CSS pour rendre l'expérience utilisateur plus dynamique et attrayante, tout en veillant à ce qu'elles restent légères et fluides.  ",
     "description_mobile": "Intégration d'un site web pour un restaurant",
     "technologies": ["JavaScript", "GitHub", "Figma","HTML", "Sass"],
-    "image":"",
+    "image":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/ohmyfood/couverture-ohmyfood.webp",
     "img_l":"https://raw.githubusercontent.com/sprisca/portfolio-P2/refs/heads/main/portfolio-main/src/image-projet/ohmyfood/Couverturte%20ohmyfood.webp",
-    "img_r":"",
+    "img_r":"https://github.com/sprisca/portfolio-P2/blob/main/portfolio-main/src/image-projet/ohmyfood/ohmyFood-menu.webp",
     "github":"https://github.com/sprisca/Ohmyfood-P4"
     
   }
