@@ -2,7 +2,7 @@
 .ContainerProjectPage{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
   height: 85vh;
   width: 100%;
   .projectPage{
@@ -15,7 +15,7 @@
     border: 1px solid $foreground;
     border-radius: 25px;
     h1{
-      color:$accent-foreground;
+      color:#09f9f9d4;
       font-size: 1.5rem;
       list-style: none;
       width: fit-content;
@@ -25,14 +25,14 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     h2{
-      color:$accent-foreground;
+      color:purple;
       font-size: 1rem;
       width: fit-content;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       margin-left: 10px;
     }
     p{
-      color:$accent-foreground;
+      color:whitesmoke;
       font-size: 0.9rem;
       width: fit-content;
       padding: 5px;
@@ -48,14 +48,14 @@
       margin-left: 20px;
       li{
         list-style: none;
-        color: $accent-foreground;
+        color: whitesmoke;
       }
     }
     .links{
       margin: 10px 0;
       a{
         width: fit-content;
-        background-color: $border;
+        background-color: rgb(7, 99, 246);
         color: $accent-foreground;
         text-decoration: none;
         border-radius: 15px;
@@ -90,15 +90,19 @@
     }
   }
 }
+
 /*Media Queries Mobile*/
 @media only screen and (max-width: 775px) {
   .ContainerProjectPage{
-
+    align-items: center;
+   
+     
     .projectPage{
         height: 100%;
         width: 95%;
+        
         h1{
-          color:$accent-foreground;
+          color:aqua;
           font-size: 1.3rem;
           list-style: none;
           width: fit-content;

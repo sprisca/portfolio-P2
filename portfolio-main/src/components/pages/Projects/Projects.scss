@@ -1,10 +1,10 @@
 .projects{
   display: flex;
   flex-direction: column;
-  height: 85vh;
+ 
   width: 100%;
   h1{
-    color:$accent-foreground;
+    color:rgb(127, 255, 214);
     font-size: 1.5rem;
     list-style: none;
     width: fit-content;
@@ -134,23 +134,43 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+   
+
     .container__projects{
+      display: block;
       gap: 5px;
       justify-content: center;
       align-items: center;
       margin: 0;
       height: 50vh;
+
       .projects_L{
-        .projet-1{
-          height: 37%;
+        width: 100%;
+        height: 50vh;
+        gap: 1rem;
+       
         }
+      
+      .projects_M{
+        width: 100%;
+        height: 50%;
+        margin-top: 1rem;
+        
       }
+      
       .projects_R{
+        width: 100%;
+        height: 50vh;
+        gap: 1rem;
+        margin-top: 1rem;
+
         .projet-5{
-          height: 37%;
+          height: 50vh;
         }
       }
+      
+    }
+   
+    
     }
   }
-}
