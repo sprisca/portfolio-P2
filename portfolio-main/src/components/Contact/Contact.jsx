@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 
+
 const Contact = ({ isOpen, onClose }) => {
   //Gestion du formulaire
   const { register, handleSubmit, reset } = useForm()

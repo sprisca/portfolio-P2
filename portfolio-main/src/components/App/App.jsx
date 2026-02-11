@@ -7,7 +7,7 @@ import Home from "../pages/Home/Home";
 import Projects from "../pages/Projects/Projects";
 import About from "../pages/About/About";
 import ProjectPage from "../ProjectPage/ProjectPage";
-import { FaHome, FaProjectDiagram, FaUserAlt, FaFileAlt } from "react-icons/fa";
+
 const App = () => {
   const basename = import.meta.env.MODE === "production" ? "/portfolio" : "" ;
   return (

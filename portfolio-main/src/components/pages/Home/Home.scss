@@ -2,13 +2,21 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 80vh;
-  margin-left: 20px;
+  height: auto;
+  min-height: 80vh;
+  
+  padding-bottom:0 20px 40px;
   .home__infos {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 40vh;
+    .home__infos{
+    height: auto;      
+    min-height: 40vh;  
+    gap: 20px;         
+}
+
+    
     .infos__logo {
       display: flex;
       justify-content: center;
@@ -86,65 +94,81 @@
       }
     }
   }
-  .home.night {
-    background-color: #121212; /* Fond sombre */
-    color: #ffffff; /* Texte clair */
+  .home{
+  // styles
+  &.night{
+    background-color: #121212;
+    color: #ffffff;
   }
-  
-  .home.night .social a {
-    color: #90caf9; /* Couleur des icônes */
+  &.day{
+    background-color: #ffffff;
+    color: #000000;
   }
-  
-  .home.day {
-    background-color: #ffffff; /* Fond clair */
-    color: #000000; /* Texte sombre */
+  &.night .social a{
+    color: #90caf9;
+  }
+}
 
-  }
   
 
 
 /*Media Queries Mobile*/
 @media only screen and (max-width: 775px) {
   .home {
-    height: 85vh;
+    height: auto;
     margin: 0;
+    padding: 80px 0 40px; //  top pour navbar + bottom
+
     .home__infos {
       flex-direction: column;
-      width: 100%;
-      height: 40vh;
+      height: auto;
+      gap: 16px;
+
       .infos__logo {
         width: 100%;
-        height: 20vh;
-        margin-left: 20px;
-        margin-top: 20px;
+        height: auto;        
+        margin: 0;           
+        padding: 16px 20px 0;
+
         h1 {
-          font-size: 24px;
+          font-size: clamp(22px, 6vw, 28px);
+          line-height: 1.1;
+          margin: 0;
         }
+
         p {
-          font-size: 24px;
-          img{
-            display: none;
-          }
+          font-size: clamp(18px, 5vw, 24px);
+          line-height: 1.2;
+          margin: 8px 0 0;
+
+          img { display: none; }
         }
       }
+
       .profile-image {
+        width: min(320px, 80%);
+        height: auto;        
+        margin: 0 auto;      
         justify-content: center;
-        height: 29vh;
-        width: 60%;
-        margin-left: 3rem;
       }
     }
-    .home__social{
-      gap: 60px;
+
+    .home__social {
+      gap: 24px;// espacement entre les icônes et le bouton
+
       .social {
-        display: flex;
+        margin-top: 0;
+        padding-top: 16px;
         justify-content: center;
-        align-items: flex-start;
-        margin-top: 10rem;
       }
-      button{
-        margin: 0;
-      }
+
+      button { margin: 0; }
     }
   }
+}
+
+@media (max-height: 520px){
+  .home .infos__logo h1{ font-size: 2.2rem; }
+  .home .infos__logo p{ font-size: 1.8rem; }
+  .home .profile-image{ margin-top: 0; }
 }

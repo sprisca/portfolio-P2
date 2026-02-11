@@ -1,187 +1,120 @@
 .projects{
   display: flex;
   flex-direction: column;
- 
   width: 100%;
+
+  //  au lieu de margin-left partout
+  padding: 0 20px 40px;
+
   h1{
-    color:rgb(127, 255, 214);
+    color: rgb(127, 255, 214);
     font-size: 1.5rem;
-    list-style: none;
     width: fit-content;
     padding: 5px 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0; //  plus de margin-left
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
   .container__projects{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    height: 70vh;
+
+    //  IMPORTANT : pas de height en vh
+    height: auto;
     width: 100%;
-    margin-left: 20px;
-    .projects_L{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      width: 30%;
-      .projet-1{
-        position: relative;
-        background-color: $accent-foreground;
-        height: 35%;
-        width: 100%;
-        border-radius: 10px;
-        transition: all 0.3s;
-        cursor: pointer;
-        &:hover{
-          transform: scale(1.1);
-        }
-        img{
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-          border-radius: 10px;
-        }
-      }
-      .projet-2{
-        background-color: $accent-foreground;
-        height: 62%;
-        width: 100%;
-        border-radius: 10px;
-        transition: all 0.3s;
-        cursor: pointer;
-        &:hover{
-          transform: scale(1.1);
-        }
-        img{
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-          border-radius: 10px;
-        }
-      }
-    }
-    .projects_M{
-      display: flex;
-      height: 100%;
-      width: 30%;
-      .projet-3{
-        background-color: gray;
-        height: 100%;
-        width: 100%;
-        border-radius: 10px;
-        transition: all 0.3s;
-        cursor: pointer;
-        &:hover{
-          transform: scale(1.1);
-        }
-        img{
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-          border-radius: 10px;
-        }
-      }
-    }
+    margin: 0;
+
+    .projects_L,
+    .projects_M,
     .projects_R{
       display: flex;
+      width: 30%;
+      min-width: 0; //  évite débordements flex
+      gap: 20px;
+    }
+
+    .projects_L,
+    .projects_R{
       flex-direction: column;
       justify-content: space-between;
-      height: 100%;
-      width: 30%;
-      .projet-4{
-        background-color: brown;
-        height: 62%;
-        width: 100%;
-        border-radius: 10px;
-        transition: all 0.3s;
-        cursor: pointer;
-        &:hover{
-          transform: scale(1.1);
-        }
-        img{
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-          border-radius: 10px;
-        }
+    }
+
+    .projects_M{
+      flex-direction: column;
+    }
+
+    //  base commune pour les cards
+    .projet-1,
+    .projet-2,
+    .projet-3,
+    .projet-4,
+    .projet-5{
+      position: relative;
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      overflow: hidden; //  évite que l'image dépasse
+      transition: transform 0.3s;
+
+      &:hover{
+        transform: scale(1.03); //  moins agressif (évite collisions)
       }
-      .projet-5{
-        background-color: $secondary-foreground;
-        height: 35%;
+
+      img{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
         border-radius: 10px;
-        transition: all 0.3s;
-        cursor: pointer;
-        &:hover{
-          transform: scale(1.1);
-        }
-        img{
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-          border-radius: 10px;
-        }
+      }
+    }
+
+    //  ratios au lieu de heights en %
+    .projet-1{ aspect-ratio: 16 / 10; }
+    .projet-2{ aspect-ratio: 16 / 9; }
+    .projet-3{ aspect-ratio: 4 / 5; }    // plus vertical au centre
+    .projet-4{ aspect-ratio: 16 / 9; }
+    .projet-5{ aspect-ratio: 16 / 10; }
+  }
+}
+
+
+/*  MOBILE */
+@media only screen and (max-width: 775px) {
+  .projects{
+    padding: 0 16px 40px;
+    align-items: stretch;
+
+    h1{
+      margin: 0 0 16px 0;
+      padding: 5px 12px;
+    }
+
+    .container__projects{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      height: auto;  //  crucial
+      margin: 0;
+
+      .projects_L,
+      .projects_M,
+      .projects_R{
+        width: 100%;
+        height: auto;
+        gap: 16px;
+      }
+
+      //  en mobile, on met tous les projets en ratio identique
+      .projet-1,
+      .projet-2,
+      .projet-3,
+      .projet-4,
+      .projet-5{
+        aspect-ratio: 16 / 9;
       }
     }
   }
 }
-/*Media Queries Mobile*/
-@media only screen and (max-width: 775px) {
-  .projects{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-
-    .container__projects{
-      display: block;
-      gap: 5px;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      height: 50vh;
-
-      .projects_L{
-        width: 100%;
-        height: 70%;
-
-      .projet-1{
-        height: 45%;
-      }
-        
-
-       .projet-2{
-        height: 50%;
-        margin-top: 1rem;
-        
-       }
-       
-        }
-      
-      .projects_M{
-        width: 100%;
-        height: 35%;
-        margin-top: 1rem;
-        
-        
-      }
-      
-      .projects_R{
-        width: 100%;
-        height: 50%;
-        gap: 1rem;
-        margin-top: 1rem;
-
-        .projet-5{
-          height: 60%;
-        }
-      }
-      
-    }
-   
-    
-    }
-  }
