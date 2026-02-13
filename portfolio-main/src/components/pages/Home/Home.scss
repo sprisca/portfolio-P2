@@ -1,7 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  width: 100%;
+ 
   height: auto;
   min-height: 80vh;
   
@@ -9,7 +9,7 @@
   .home__infos {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    
     .home__infos{
     height: auto;      
     min-height: 40vh;  

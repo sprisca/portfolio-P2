@@ -1,7 +1,7 @@
 .projects{
   display: flex;
   flex-direction: column;
-  width: 100%;
+
 
   //  au lieu de margin-left partout
   padding: 0 20px 40px;
@@ -76,8 +76,10 @@
     .projet-3{ aspect-ratio: 4 / 5; }    // plus vertical au centre
     .projet-4{ aspect-ratio: 16 / 9; }
     .projet-5{ aspect-ratio: 16 / 10; }
+    
   }
 }
+
 
 
 /*  MOBILE */
